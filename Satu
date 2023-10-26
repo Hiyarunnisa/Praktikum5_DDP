@@ -1,6 +1,4 @@
-namakendaraan = "Aerox"
-harga = "30.000.000"
-jenis = "kendaraan darat"
-cc = "130"
-warna = "merah"
-print("kendaraan\n", namakendaraan, "\n", harga, "\n", jenis, "\n", cc, "\n", warna)
+list = ("mobil", "Aerox", 2799, " merah", 4) 
+print = (list) 
+list_append ("1M") 
+list_append (2, "fareri") 
