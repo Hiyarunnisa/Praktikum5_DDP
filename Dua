@@ -1,20 +1,31 @@
-def hitung_luas_bangun_datar(pilihan):
-    match pilihan:
-        case 1:
-            sisi = float(input("Masukkan panjang sisi persegi: "))
-            luas = sisi * sisi
-            print(f"Luas persegi adalah {luas}")
-        case 2:
-            jari_jari = float(input("Masukkan jari-jari lingkaran: "))
-            luas = 3.14 * jari_jari ** 2
-            print(f"Luas lingkaran adalah {luas}")
-        case 3:
-            alas = float(input("Masukkan alas segitiga: "))
-            tinggi = float(input("Masukkan tinggi segitiga: "))
-            luas = 0.5 * alas * tinggi
-            print(f"Luas segitiga adalah {luas}")
-        case _:
-            print("Pilihan tidak valid")
+ket  = '''
+Selamat datang di aplikasi perhitungan
+silahkan pilih menu yang akan Anda jalankan
+1. menghitung luas persegi
+2. menghitung luas lingkaran
+3. menghitung luas segitiga
+'''
+pilihan = input(ket)
 
-pilihan = int(input("Pilih bangun datar (1: Persegi, 2: Lingkaran, 3: Segitiga): "))
-hitung_luas_bangun_datar(pilihan)
+match pilihan:
+    case "1":
+        print("kamu memilih 2 untuk menghitung luas persegi")
+        sisi = float(input("Masukkan panjang sisi persegi: "))
+        luas_persegi = sisi * sisi
+
+        print("Luas persegi:", luas_persegi)
+    case "2":
+        print("kamu memilih 2 untuk menghitung luas lingkaran")
+        jari = float(input("Masukkan jari-jari lingkaran: "))
+        luas =3.14*jari*jari
+
+        print("Luas lingkaran:", luas)
+    case "3":
+        print("kamu memilih 2 untuk menghitung luas segitiga")
+        alas = float(input("Masukkan panjang alas segitiga: "))
+        tinggi = float(input("Masukkan tinggi segitiga: "))
+        luas_segitiga = 0.5 * alas * tinggi
+
+        print("Luas segitiga:", luas_segitiga)
+    case _:
+        print("Pilihan kamu salah")
